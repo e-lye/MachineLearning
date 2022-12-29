@@ -593,9 +593,9 @@ class Multinomial_logistic:
             if X_valid is not None and y_valid is not None:
                 loss_valid = self.ce(X_valid, y_valid)
                 losses_valid[i] = loss_valid
-                print(f"iter {i}: {loss_train:.3f}; {loss_valid:.3f}")
-            else:
-                print(f"iter {i}: {loss_train:.3f}")
+                #print(f"iter {i}: {loss_train:.3f}; {loss_valid:.3f}")
+            #else:
+                #print(f"iter {i}: {loss_train:.3f}")
         return losses_train, losses_valid
 
     def check_grad(self, X, y):
