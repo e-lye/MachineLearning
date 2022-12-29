@@ -640,7 +640,7 @@ class Multi_with_early_stopping(Multinomial_logistic):
             if X_valid is not None and y_valid is not None:
                 loss_valid = self.ce(X_valid, y_valid)
                 losses_valid[i] = loss_valid
-                print(f"iter {i}: {loss_train:.3f}; {loss_valid:.3f}")
+                #print(f"iter {i}: {loss_train:.3f}; {loss_valid:.3f}")
                 if early_stopping and i>look_back:
                   loss_is_greater = (loss_valid > np.mean(losses_valid[i-look_back:i]))#compare current validation loss with before
                   if loss_is_greater:
@@ -649,7 +649,8 @@ class Multi_with_early_stopping(Multinomial_logistic):
                     losses_valid = losses_valid[:i]
                     break
             else:
-                print(f"iter {i}: {loss_train:.3f}")
+                #print(f"iter {i}: {loss_train:.3f}")
+                pass
         return losses_train, losses_valid
 
 """### Predictions"""
