@@ -25,7 +25,7 @@ A brief summary of the projects in this repository. Further details can be found
     * Decision Tree
         * Predictions on the presence of diabetic retinophany in patients, based on their's health information that were a mix of categorical and continuous features. 
         * This dataset of information differs from the one used in our KNN implementation.
-* [**LogisticRegression**](https://github.com/e-lye/MachineLearning/tree/main/LogisticRegression) (Logistic Regression and Multiclass Regression)
+* [**Regression**](https://github.com/e-lye/MachineLearning/tree/main/Regression) (Logistic Regression and Multiclass Regression)
     * Logistic Regression
         * Predictions on the positivity/negativity of movie reviews, based on the vocabulary used in the review.
     * Multiclass Regression
